@@ -1,4 +1,285 @@
-<html>
-  <body>hello world</body>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Font Awesome Solid + Brands -->
+  <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="fontawesome/css/brands.css" rel="stylesheet">
+  <link href="fontawesome/css/solid.css" rel="stylesheet">
+
+
+<style>
+
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 14%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+}
+
+#Main {background-color: grey	;}
+#G1 {background-color: #48cae4;}
+#G2 {background-color: #577590;}
+#G3 {background-color: #f9844a;}
+#G4 {background-color: #90be6d;}
+#G5 {background-color: #f9c74f;}
+#G6 {background-color: #d4b2d8;}
+#G1 {background-color: #d4b2d8;}
+#G2 {background-color: #d4b2d8;}
+#G3 {background-color: #d4b2d8;}
+#G4 {background-color: #d4b2d8;}
+#G5 {background-color: #d4b2d8;}
+#G6 {background-color: #d4b2d8;}
+</style>
+</head>
+
+
+<body>
+<button class="tablink" onclick="openPage('Main', this, 'grey')" id="defaultOpen">Main</button>
+<button class="tablink" onclick="openPage('G1', this, '#48cae4')">G-1</button>
+<button class="tablink" onclick="openPage('G2', this, '#577590')">G-2</button>
+<button class="tablink" onclick="openPage('G3', this, '#f9844a')">G-3</button>
+<button class="tablink" onclick="openPage('G4', this, '#90be6d')">G-4</button>
+<button class="tablink" onclick="openPage('G5', this, '#f9c74f')">G-5</button>
+<button class="tablink" onclick="openPage('G6', this, '#d4b2d8')">G-6</button>
+
+<div id="Main" class="tabcontent">
+  <h3>Main</h3>
+		<a href="https://www.scratch.mit.edu" target="_blank"><img border="0" alt="scratch" src="https://en.scratch-wiki.info/w/images/Scratch_logo.svg" width="200" height="100"></img></a>
+</div>
+
+<div id="G1" class="tabcontent">
+  <h3>G-1</h3>
+		<a href="
+			https://www.roomrecess.com/games/DragonDrop/play.html
+			" target="_blank">
+			<img border="0" alt="Dragon Drop" src="data:image/jpeg;base64,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" width="200"></img></a>
+
+		<a href="
+	https://thisissand.com
+			" target="_blank">
+			<img src="
+					 https://thisissand.com/static/media/bannerScreen.90c0058e0fa44ce86287.png
+					 " width="200"></img>
+		</a>
+
+		<a href="
+			https://www.roomrecess.com/pages/ColoringPagesForKids.html
+			" target="_blank">
+			<img src="
+			https://www.roomrecess.com/Pictures/ColoringPics/CmasSnowGlobe.png
+			" width="200"></img>
+		</a>
+
+		<a href="
+			https://www.roomrecess.com/pages/MathGamesForKids.html
+			" target="_blank">
+			<img src="
+			https://www.roomrecess.com/Pictures/GB/ButTicMathToe.jpg
+			" width="200"></img>
+		</a>
+		<a href="
+		https://www.edclub.com/sportal/program-3.game
+			" target="_blank">
+			">
+			<img src="
+			https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Olivetti_Lettera_22_by_LjL.jpeg/500px-Olivetti_Lettera_22_by_LjL.jpeg
+			" width="200"></img>
+		</a>
+
+
+</div>
+
+<div id="G2" class="tabcontent">
+  <h3>G-2</h3>
+<!--
+	<p>
+	<table>
+		<tr>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+			<td> </td>
+		</tr>
+
+2,,Thida,,Andy,,Vathana
+,,Bella,,Chey Heng,,Josdek
+,,Sakona,,Undom,,Sambath
+,,Monich,,Reach,,Kea Vy
+,,,,,,
+,,Visal,,Malieza,,
+,,Ratana,,Jasmine,,Biriya
+,,Jetta,,Pink Pink,,Sumeru
+,,Yana,,Julie,,
+,,,,,,
+Grade 2,,Thida,,Andy,,Vathana
+,,Bella,,Chey Heng,,Josdek
+,,Sakona,,Undom,,Sambath
+,,Monich,,Reach,,Kea Vy
+,,,,,,
+,,Visal,,Malieza,,
+,,Ratana,,Jasmine,,Biriya
+,,Jetta,,Pink Pink,,Sumeru
+,,Yana,,Julie,,
+
+--!>
+
+
+
+
+
+
+<!--
+<table>
+	<tr>
+			<td>cap2-yana
+			</td><td>cap2-jetta
+			</td><td>cap2-ratana
+			</td><td>cap2-visal
+		</td><td></td>
+			</td><td>cap2-monique
+			</td><td>cap2-sakona
+			</td><td>cap2-bella
+			</td><td>cap2-thida
+	</td></tr><tr>
+			</td><td>cap2-julie	
+			</td><td>cap2-pinkpink
+			</td><td>cap2-jasmine
+			</td><td>cap2-maliesa	
+		</td><td></td>
+			</td><td>cap2-reach
+			</td><td>cap2-oudom
+			</td><td>cap2-chhay_heng
+			</td><td>cap2-andy
+	</td></tr><tr>
+			</td><td>x
+			</td><td>cap2-sakda
+			</td><td>cap2-sumeru
+			</td><td>cap2-jeje
+		</td><td></td>
+			</td><td>cap2-keauy
+			</td><td>cap2-sambath
+			</td><td>cap2-joedek
+			</td><td>cap2-vatanak	
+	</tr>
+</table>
+--!>
+
+
+</div>
+
+<div id="G3" class="tabcontent">
+  <h3>G3</h3>
+<a href="https://docs.google.com/document/d/1skMFkNsCwpPNLJaImGJXM-8ql-odz2SKCEvPSL_ltMM/edit?usp=sharing" target="_blank">Grade 3 Semester Exam</a>
+</div> 
+
+<div id="G4" class="tabcontent">
+  <h3>G-4</h3>
+<a href="https://docs.google.com/document/d/1sCW_K4Qr0EWNeBuzPYoBcefR0rGncsYHWVMqAHtU0Ik/edit?usp=sharing" target="_blank">Grade 4 Semester Exam</a>
+</div> 
+
+<div id="G5" class="tabcontent">
+  <h3>G-5</h3>
+<a href="https://docs.google.com/document/d/1lwK7zkcMENYIG30PN7lIhRspjJCrvSUHDUa3RV4UMhs/edit?usp=sharing" target="_blank">Grade 5 Semester Exam</a>
+</div> 
+
+<div id="G6" class="tabcontent">
+  <h3>G-6</h3>
+	
+<a href="https://docs.google.com/document/d/1z6i9TNY7j9s7yuXo5fdqK4szFHnkPnpy7n4dCy1OS8E/edit?usp=sharing" target="_blank">Grade 6 Semester Exam</a>
+
+<!---
+<h2>Desks</h2>
+<table>
+	<tr>
+			<td>Roth					
+			</td><td>
+			</td><td>Zanit					
+			</td><td>Lily				  
+		</td><td>
+			</td><td>Souvon				
+			</td><td>Vannika			
+			</td><td>Keat Cheng	
+			</td><td>Momo				  
+	</tr><tr>
+			</td><td>Anna			
+			</td><td>Alyza			
+			</td><td>Thip			
+			</td><td>Reach		  
+		</td><td>
+			</td><td>Ving Long	
+			</td><td>Boi		
+			</td><td>			
+			</td><td>SouG		  
+	</tr><tr>
+			</td><td>
+			</td><td>Vathna
+			</td><td>Rith
+			</td><td>Pitu
+		</td><td>
+			</td><td>
+			</td><td>
+			</td><td>
+			</td><td>
+	</tr>
+	</table>
+	---!>
+</div> 
+
+	<script>
+		function openPage(pageName, elmnt, color) {
+			// Hide all elements with class="tabcontent" by default */
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+
+			// Remove the background color of all tablinks/buttons
+			tablinks = document.getElementsByClassName("tablink");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].style.backgroundColor = "";
+			}
+
+			// Show the specific tab content
+			document.getElementById(pageName).style.display = "block";
+
+			// Add the specific color to the button used to open the tab content
+			elmnt.style.backgroundColor = color;
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+	</script>
+
+	<title>ZISPP ICT Class</title>
+
+</body>
 </html>
