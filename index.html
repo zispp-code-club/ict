@@ -9,173 +9,685 @@
   <link href="fontawesome/css/brands.css" rel="stylesheet">
   <link href="fontawesome/css/solid.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="styles.css">
 
-<style>
-
-/* Set height of body and the document to 100% to enable "full page tabs" */
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial;
-}
-
-/* Style tab links */
-.tablink {
-  background-color: #555;
-  color: white;
-  float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
-  font-size: 17px;
-  width: 14%;
-}
-
-.tablink:hover {
-  background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-  color: white;
-  display: none;
-  padding: 100px 20px;
-  height: 100%;
-}
-
-#Main {background-color: grey	;}
-#G1 {background-color: #48cae4;}
-#G2 {background-color: #577590;}
-#G3 {background-color: #f9844a;}
-#G4 {background-color: #90be6d;}
-#G5 {background-color: #f9c74f;}
-#G6 {background-color: #d4b2d8;}
-#G1 {background-color: #d4b2d8;}
-#G2 {background-color: #d4b2d8;}
-#G3 {background-color: #d4b2d8;}
-#G4 {background-color: #d4b2d8;}
-#G5 {background-color: #d4b2d8;}
-#G6 {background-color: #d4b2d8;}
-</style>
+	<title>ZISPP ICT Class</title>
 </head>
 
 
 <body>
-<button class="tablink" onclick="openPage('Main', this, 'grey')" id="defaultOpen">Main</button>
+<button class="tablink Main" onclick="openPage('Main', this, '#333333')" id="defaultOpen">Main</button>
+<!---
 <button class="tablink" onclick="openPage('G1', this, '#48cae4')">G-1</button>
-<button class="tablink" onclick="openPage('G2', this, '#577590')">G-2</button>
-<button class="tablink" onclick="openPage('G3', this, '#f9844a')">G-3</button>
-<button class="tablink" onclick="openPage('G4', this, '#90be6d')">G-4</button>
-<button class="tablink" onclick="openPage('G5', this, '#f9c74f')">G-5</button>
-<button class="tablink" onclick="openPage('G6', this, '#d4b2d8')">G-6</button>
+---!>
+<button class="tablink G1" onclick="openPage('G1', this, '#d4b2d8')">G-1</button>
+<button class="tablink G2" onclick="openPage('G2', this, '#577590')">G-2</button>
+<button class="tablink G3" onclick="openPage('G3', this, '#f9844a')">G-3</button>
+<button class="tablink G4" onclick="openPage('G4', this, '#90be6d')">G-4</button>
+<button class="tablink G5" onclick="openPage('G5', this, '#f9c74f')">G-5</button>
+<button class="tablink G6" onclick="openPage('G6', this, '#d4b2d8')">G-6</button>
+<button class="tablink Club" onclick="openPage('Club', this, '#559')">Club</button>
 
-<div id="Main" class="tabcontent">
-  <h3>Main</h3>
-		<a href="
-			https://classroom.google.com
-			" target="_blank">
+
+<div id="Main" class="tabcontent" style="color: #fff;">
+  <h2>Main</h2>
+
+	<section class="card-container">
+
+	<div class="card">
+		<div class="card-image">
 			<img src="
 				https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png?20180610140757
-			 " width="200"></img>
-		</a>
+			" /img>
+		</div>
+		<div class="card-details">
+			<h6 class="card-name">Google Classroom</h6>
+				<a href="
+				https://classroom.google.com
+				" target="_blank"></a>
+		</div>
+	</div>
 
-		<a href="https://www.scratch.mit.edu" target="_blank"><img border="0" alt="scratch" src="https://en.scratch-wiki.info/w/images/Scratch_logo.svg" width="200" height="100"></img></a>
-		
-		<a href="
-			https://hourofcode.com/us/learn
-			" target="_blank">
+	<div class="card">
+		<div class="card-image">
 			<img src="
-				https://hourofcode.com/us/en/images/hour-of-code-logo.png
-				" width="200"></img>
-		</a>
-		<a href="
-			https://apps.microsoft.com/detail/9nblggh4r2r6?hl=en-US&gl=US
-			" target="_blank">
-			<img src="
-https://store-images.s-microsoft.com/image/apps.61383.13510798887411471.a0eac7f3-ab13-4987-8bac-ceab380e131f.cc7c863a-63fc-43c5-9ea7-b69cd41c0651?h=210
-				" width="200"></img>
-		</a>
-	<br>
-<a href="https://kidlocoding.com">Kidlocoding</a>
-<a href="https://rodocodo.com">Rodocodo</a>
-<a href="https://blockly.games">Blockly games</a>
-<a href="https://makecode.org">Makecode</a>
-<a href="https://codeclubworld.com">Codeclub world</a>
-<a href="https://david-peter.de/cube-composer/">Cube composer</a>
-<a href="https://Nandgame.com>Nandgame"></a>
-<a href="https://robotopia-x.github.io/">Robotopia</a>
-<a href="https://twinery.org">Twinery</a>
-<a href="https://bitsy.org">Bitsy</a>
-<a href="https://bipsy.org">Bipsy</a>
-<a href="https://flickgame.org">Flickgame</a>
-<a href="https://kool.tools/flicksy2/">Flicksy2</a>
-<a href="https://kaplayjs.com">Kaplay</a>
-<a href="https://turtlespaces.org">turtlespaces</a>
-<a href="https://Code Combat Worlds">Codecombat Worlds  (Lua coding game on roblox)</a>
-<a href="https://shapez.io">Shapez</a>
-<a href="https://maria.cloud">maria cloud</a>
-<a href="https://downour.games">Downpour</a>
-<a href="https://games.penjee.com/binary-numbers-game/">Binary game</a>
-<a href="https://pickcode.io">pickcode</a>
-<a href="https://stanford.edu/~cpiech/karel/learn.html">Karel</a>
-<a href="https://github.com/katspaugh/lambda.quest?tab=readme-ov-file">Lambda Quest</a>
-<a href="https://inexorabletash.github.io/jslogo/">jslogo</a>
-<a href="https://www.construct.net/en">Construct</a>
-<a href="https://codecombat.com/">Codecombat</a>
-<a href="https://play.kahoot.it/v2/?quizId=ccaf40c1-99cd-48d5-a3dc-908ebafde071">Kahoot</a>
-<a href="https://makecode.microbit.org/projects/radio-games">Mirobit</a>
+			https://en.scratch-wiki.info/w/images/Scratch_logo.svg
+			" /img>
+		</div>
+		<div class="card-details">
+			<h6 class="card-name">Scratch</h6>
+				<a href="
+				https://www.scratch.mit.edu
+				" target="_blank"></a>
+		</div>
+	</div>
 
-
+	</section>
 </div>
 
+
+
+<div id="Club" class="tabcontent" style="color: #fff;"> 
+  <h2>Code Club</h2>
+	<p>
+	Welcome to Code Club!
+	</p>
+
+  <h3>Resources</h3>
+
+	<p>
+	Resource links for some of our activities.
+	</p>
+
+	<section class="card-container">
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://en.scratch-wiki.info/w/images/Scratch_logo.svg
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Scratch</h6>
+                <a href="
+                https://www.scratch.mit.edu
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://hourofcode.com/us/en/images/hour-of-code-logo.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Hour of Code</h6>
+                <a href="
+                https://hourofcode.com/us/learn
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://www.raspberrypi.com/app/uploads/2022/02/COLOUR-Raspberry-Pi-Symbol-Registered.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Raspberry Pi</h6>
+                <a href="
+                https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Microbit-logo-stacked.png/320px-Microbit-logo-stacked.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Microbit</h6>
+                <a href="
+                https://makecode.microbit.org/projects/radio-games
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://static.wikia.nocookie.net/logopedia/images/b/bd/Roblox_Studio_2022_icon.svg/revision/latest?cb=20230412235638
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Roblox Studio</h6>
+                <a href="
+                https://create.roblox.com/docs/creation
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://store-images.s-microsoft.com/image/apps.61383.13510798887411471.a0eac7f3-ab13-4987-8bac-ceab380e131f.cc7c863a-63fc-43c5-9ea7-b69cd41c0651?h=210
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Minecraft Education</h6>
+                <a href="
+                https://apps.microsoft.com/detail/9nblggh4r2r6?hl=en-US&gl=US
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                http://www.kidlocoding.com/img/50-plus-coding-games.jpg
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Kidlocoding</h6>
+                <a href="
+                https://Kidlocoding.com
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://www.rodocodo.com/wp-content/uploads/2021/03/main-screenshot-min.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Rodocodo</h6>
+                <a href="
+                https://rodocodo.com
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh3pU2NheQRG__1AkTjt_fW23dVGJBvlI_boeMXbwzz0Dkb3yp&s
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Blockly Games</h6>
+                <a href="
+                https://blockly.games
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://tse4.mm.bing.net/th?id=OIP.VPPmArGNhanSUfIEqu1P2QHaFj&pid=15.1
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">MakeCode</h6>
+                <a href="
+                https://makecode.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://cdn.brandfetch.io/id3S4AsIjW/w/400/h/400/theme/dark/icon.jpeg?c=1bx1736917911127id64Mup7ac-r4-sZ1C&t=1732280622911
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">CodeClub World</h6>
+                <a href="
+                https://codeclubworld.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://david-peter.de/cube-composer/img/cube-composer.svg
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Cube Composer</h6>
+                <a href="
+                https://david-peter.de/cube-composer/
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://preview.redd.it/beginners-guide-to-nand-logic-v0-scknblqamk5e1.png?width=640&crop=smart&auto=webp&s=13eb2b8c4094c9b9561a83a41ce69d9f2890b06f
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Nandgame</h6>
+                <a href="
+                https://Nandgame.com>Nandgame
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://github.com/robotopia-x/robotopia/raw/master/assets/img/screenshot.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Robotopia</h6>
+                <a href="
+                https://robotopia-x.github.io/
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0vkwh-Iaru_Kf4Shbitn6ducxfI_1c_V7it6MevK7I53iTKo&s
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Twine</h6>
+                <a href="
+                https://twinery.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://www.shimmerwitch.space/bitsyTutorialImg/BitsyTilesAnimated.gif
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Bitsy</h6>
+                <a href="
+                https://bitsy.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Bipsy</h6>
+                <a href="
+                https://bipsy.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://www.flickgame.org/helpimage.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Flickgame</h6>
+                <a href="
+                http://flickgame.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://tse3.mm.bing.net/th?id=OIP.4mqNct2cXkRU85BJ_j_pAQHaDz&pid=15.1
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Fiicksy2</h6>
+                <a href="
+                http://kool.tools/flicksy2/
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://kaplayjs.com/_astro/kaplay-banner.SYsC3YBq_ZO4Fh7.webp
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Kaplay</h6>
+                <a href="
+                https://kaplayjs.com
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://i0.wp.com/turtlespaces.org/wp-content/uploads/2020/09/tslogo2-3.png?w=443&ssl=1
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">TurtleSpaces</h6>
+                <a href="
+                https://turtlespaces.org
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://codecombat.com/images/pages/roblox/coco-worlds-no-desc.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Code Combat Worlds</h6>
+                <a href="
+                https://Code Combat Worlds
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://www.metacritic.com/a/img/catalog/provider/6/12/6-1-898860-52.jpg
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Shapez</h6>
+                <a href="
+                https://shapez.io
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://tse2.mm.bing.net/th?id=OIP.hxDz-_omfBflxuW4Vk6qwQHaCO&pid=15.1
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Maria.cloud</h6>
+                <a href="
+                https://maria.cloud
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://downpour.games/assets/logo.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Downpour Games</h6>
+                <a href="
+                https://downour.games
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnIV_ogqCcrea-Nh_JOaSW4Mojfw5u75kozyKOL_ewnUFL4fMEIaEjEOf0E96d5G9xR9w0rcrhT63tDuAE6TfWFGNQmNoXiC8KJY96ZFaqmHLL7RjIUVLqojIepfzV4x0rNIqTJAoZ1-U/s320/kettesszamrendszer.JPG
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Binary Game</h6>
+                <a href="
+                https://games.penjee.com/binary-numbers-game/
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://pickcode.io/wordmark.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Pickcode</h6>
+                <a href="
+                https://pickcode.io
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                https://compedu.stanford.edu/karel-reader/docs/images/ch1/world.png
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Karel</h6>
+                <a href="
+                https://stanford.edu/~cpiech/karel/learn.html
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Lambda Quest</h6>
+                <a href="
+                https://github.com/katspaugh/lambda.quest?tab=readme-ov-file
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">JS Logo</h6>
+                <a href="
+                https://inexorabletash.github.io/jslogo/
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Construct</h6>
+                <a href="
+                https://www.construct.net/en
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+
+    <div class="card">
+        <div class="card-image">
+            <img src="
+                
+            " /img>
+        </div>
+        <div class="card-details">
+            <h6 class="card-name">Code Combat</h6>
+                <a href="
+                https://codecombat.com/
+                " target="_blank"></a>
+        </div>
+    </div>
+    
+	</section>
+</div>
+
+
 <div id="G1" class="tabcontent">
-  <h3>G-1</h3>
-		<a href="https://www.scratch.mit.edu" target="_blank"><img border="0" alt="scratch" src="https://en.scratch-wiki.info/w/images/Scratch_logo.svg" width="200" height="100"></img></a>
-		<a href="
-			https://www.roomrecess.com/games/DragonDrop/play.html
-			" target="_blank">
-			<img border="0" alt="Dragon Drop" src="
-https://i.ytimg.com/vi/RCPbq-JFtLE/maxresdefault.jpg
-			" width="200"></img></a>
+  <h2>Grade 1</h2>
+	<section class="card-container">
 
-		<a href="
-	https://thisissand.com
-			" target="_blank">
-			<img src="
-					 https://thisissand.com/static/media/bannerScreen.90c0058e0fa44ce86287.png
-					 " width="200"></img>
-		</a>
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://en.scratch-wiki.info/w/images/Scratch_logo.svg
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Scratch</h6>
+					<a href="
+									https://www.scratch.mit.edu
+					" target="_blank"></a>
+			</div>
+		</div>
+			
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Kahoot_Logo.svg/500px-Kahoot_Logo.svg.png
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Kahoot</h6>
+					<a href="
+									https://play.kahoot.it/v2/?quizId=ccaf40c1-99cd-48d5-a3dc-908ebafde071
+					" target="_blank"></a>
+			</div>
+		</div>
+			
 
-		<a href="
-			https://www.roomrecess.com/pages/ColoringPagesForKids.html
-			" target="_blank">
-			<img src="
-			https://www.roomrecess.com/Pictures/ColoringPics/CmasSnowGlobe.png
-			" width="200"></img>
-		</a>
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://i.ytimg.com/vi/RCPbq-JFtLE/maxresdefault.jpg
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Dragon Drop</h6>
+					<a href="
+									https://www.roomrecess.com/games/DragonDrop/play.html
+					" target="_blank"></a>
+			</div>
+		</div>
+			
 
-		<a href="
-			https://www.roomrecess.com/pages/MathGamesForKids.html
-			" target="_blank">
-			<img src="
-			https://www.roomrecess.com/Pictures/GB/ButTicMathToe.jpg
-			" width="200"></img>
-		</a>
-		<a href="
-		https://www.edclub.com/sportal/program-3.game
-			" target="_blank">
-			<img src="
-			https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Olivetti_Lettera_22_by_LjL.jpeg/500px-Olivetti_Lettera_22_by_LjL.jpeg
-			" width="200"></img>
-		</a>
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://thisissand.com/static/media/bannerScreen.90c0058e0fa44ce86287.png
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">This is Sand</h6>
+					<a href="
+									https://thisissand.com
+					" target="_blank"></a>
+			</div>
+		</div>
+			
 
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://www.roomrecess.com/Pictures/ColoringPics/CmasSnowGlobe.png
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Coloring Pages</h6>
+					<a href="
+									https://www.roomrecess.com/pages/ColoringPagesForKids.html
+					" target="_blank"></a>
+			</div>
+		</div>
+			
 
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://www.roomrecess.com/Pictures/GB/ButTicMathToe.jpg
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Math Games</h6>
+					<a href="
+									https://www.roomrecess.com/pages/MathGamesForKids.html
+					" target="_blank"></a>
+			</div>
+		</div>
 
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									http://www.kidlocoding.com/img/50-plus-coding-games.jpg
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Kidlocoding</h6>
+					<a href="
+									https://Kidlocoding.com
+					" target="_blank"></a>
+			</div>
+		</div>
+
+		<div class="card">
+			<div class="card-image">
+				<img src="
+									https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Olivetti_Lettera_22_by_LjL.jpeg/500px-Olivetti_Lettera_22_by_LjL.jpeg
+				" /img>
+			</div>
+			<div class="card-details">
+				<h6 class="card-name">Typing Club</h6>
+					<a href="
+									https://www.edclub.com/sportal/program-3.game
+					" target="_blank"></a>
+			</div>
+		</div>
+	</section>
 </div>
 
 <div id="G2" class="tabcontent">
-  <h3>G-2</h3>
+  <h2>Grade 2</h2>
 <!--
 	<p>
 	<table>
@@ -253,22 +765,22 @@ Grade 2,,Thida,,Andy,,Vathana
 </div>
 
 <div id="G3" class="tabcontent">
-  <h3>G3</h3>
+  <h2>Grade 3</h2>
 <a href="https://docs.google.com/document/d/1skMFkNsCwpPNLJaImGJXM-8ql-odz2SKCEvPSL_ltMM/edit?usp=sharing" target="_blank">Grade 3 Semester Exam</a>
 </div> 
 
 <div id="G4" class="tabcontent">
-  <h3>G-4</h3>
+  <h2>Grade 4</h2>
 <a href="https://docs.google.com/document/d/1sCW_K4Qr0EWNeBuzPYoBcefR0rGncsYHWVMqAHtU0Ik/edit?usp=sharing" target="_blank">Grade 4 Semester Exam</a>
 </div> 
 
 <div id="G5" class="tabcontent">
-  <h3>G-5</h3>
+  <h2>Grade 5</h2>
 <a href="https://docs.google.com/document/d/1lwK7zkcMENYIG30PN7lIhRspjJCrvSUHDUa3RV4UMhs/edit?usp=sharing" target="_blank">Grade 5 Semester Exam</a>
 </div> 
 
 <div id="G6" class="tabcontent">
-  <h3>G-6</h3>
+  <h2>Grade 6</h2>
 	
 <a href="https://docs.google.com/document/d/1z6i9TNY7j9s7yuXo5fdqK4szFHnkPnpy7n4dCy1OS8E/edit?usp=sharing" target="_blank">Grade 6 Semester Exam</a>
 
@@ -319,25 +831,24 @@ Grade 2,,Thida,,Andy,,Vathana
 				tabcontent[i].style.display = "none";
 			}
 
+			/*
 			// Remove the background color of all tablinks/buttons
 			tablinks = document.getElementsByClassName("tablink");
 			for (i = 0; i < tablinks.length; i++) {
 				tablinks[i].style.backgroundColor = "";
 			}
+			*/
 
 			// Show the specific tab content
 			document.getElementById(pageName).style.display = "block";
 
 			// Add the specific color to the button used to open the tab content
-			elmnt.style.backgroundColor = color;
+			//elmnt.style.backgroundColor = color;
 		}
 
 		// Get the element with id="defaultOpen" and click on it
 		document.getElementById("defaultOpen").click();
 	</script>
 
-	<title>ZISPP ICT Class</title>
-
 </body>
 </html>
-
