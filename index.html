@@ -17,10 +17,7 @@
 
 <body>
 <button class="tablink Main" onclick="openPage('Main', this, '#333333')" id="defaultOpen">Main</button>
-<!---
-<button class="tablink" onclick="openPage('G1', this, '#48cae4')">G-1</button>
----!>
-<button class="tablink G1" onclick="openPage('G1', this, '#d4b2d8')">G-1</button>
+<button class="tablink G1" onclick="openPage('G1', this, 'red')">G-1</button>
 <button class="tablink G2" onclick="openPage('G2', this, '#577590')">G-2</button>
 <button class="tablink G3" onclick="openPage('G3', this, '#f9844a')">G-3</button>
 <button class="tablink G4" onclick="openPage('G4', this, '#90be6d')">G-4</button>
@@ -29,15 +26,15 @@
 <button class="tablink Club" onclick="openPage('Club', this, '#559')">Club</button>
 
 
-<div id="Main" class="tabcontent" style="color: #fff;">
-  <h2>Main</h2>
+<div id="Main" class="tabcontent">
+  <h3>Main</h3>
 
 	<section class="card-container">
 
 	<div class="card">
 		<div class="card-image">
 			<img src="
-				https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png?20180610140757
+			https://upload.wikimedia.org/wikipedia/commons/5/59/Google_Classroom_Logo.png?20180610140757
 			" /img>
 		</div>
 		<div class="card-details">
@@ -66,8 +63,7 @@
 </div>
 
 
-
-<div id="Club" class="tabcontent" style="color: #fff;"> 
+<div id="Club" class="tabcontent"> 
   <h2>Code Club</h2>
 	<p>
 	Welcome to Code Club!
@@ -564,6 +560,7 @@
 </div>
 
 
+
 <div id="G1" class="tabcontent">
   <h2>Grade 1</h2>
 	<section class="card-container">
@@ -686,8 +683,12 @@
 	</section>
 </div>
 
+
+
 <div id="G2" class="tabcontent">
   <h2>Grade 2</h2>
+</div>
+
 <!--
 	<p>
 	<table>
@@ -719,11 +720,6 @@ Grade 2,,Thida,,Andy,,Vathana
 ,,Yana,,Julie,,
 
 --!>
-
-
-
-
-
 
 <!--
 <table>
@@ -759,32 +755,7 @@ Grade 2,,Thida,,Andy,,Vathana
 			</td><td>cap2-vatanak	
 	</tr>
 </table>
---!>
 
-
-</div>
-
-<div id="G3" class="tabcontent">
-  <h2>Grade 3</h2>
-<a href="https://docs.google.com/document/d/1skMFkNsCwpPNLJaImGJXM-8ql-odz2SKCEvPSL_ltMM/edit?usp=sharing" target="_blank">Grade 3 Semester Exam</a>
-</div> 
-
-<div id="G4" class="tabcontent">
-  <h2>Grade 4</h2>
-<a href="https://docs.google.com/document/d/1sCW_K4Qr0EWNeBuzPYoBcefR0rGncsYHWVMqAHtU0Ik/edit?usp=sharing" target="_blank">Grade 4 Semester Exam</a>
-</div> 
-
-<div id="G5" class="tabcontent">
-  <h2>Grade 5</h2>
-<a href="https://docs.google.com/document/d/1lwK7zkcMENYIG30PN7lIhRspjJCrvSUHDUa3RV4UMhs/edit?usp=sharing" target="_blank">Grade 5 Semester Exam</a>
-</div> 
-
-<div id="G6" class="tabcontent">
-  <h2>Grade 6</h2>
-	
-<a href="https://docs.google.com/document/d/1z6i9TNY7j9s7yuXo5fdqK4szFHnkPnpy7n4dCy1OS8E/edit?usp=sharing" target="_blank">Grade 6 Semester Exam</a>
-
-<!---
 <h2>Desks</h2>
 <table>
 	<tr>
@@ -819,8 +790,32 @@ Grade 2,,Thida,,Andy,,Vathana
 			</td><td>
 	</tr>
 	</table>
-	---!>
+--!>
+
+
+
+
+<div id="G3" class="tabcontent">
+  <h2>Grade 3</h2>
+<a href="https://docs.google.com/document/d/1skMFkNsCwpPNLJaImGJXM-8ql-odz2SKCEvPSL_ltMM/edit?usp=sharing" target="_blank">Grade 3 Semester Exam</a>
 </div> 
+
+<div id="G4" class="tabcontent">
+  <h2>Grade 4</h2>
+<a href="https://docs.google.com/document/d/1sCW_K4Qr0EWNeBuzPYoBcefR0rGncsYHWVMqAHtU0Ik/edit?usp=sharing" target="_blank">Grade 4 Semester Exam</a>
+</div> 
+
+<div id="G5" class="tabcontent">
+  <h2>Grade 5</h2>
+<a href="https://docs.google.com/document/d/1lwK7zkcMENYIG30PN7lIhRspjJCrvSUHDUa3RV4UMhs/edit?usp=sharing" target="_blank">Grade 5 Semester Exam</a>
+</div> 
+
+<div id="G6" class="tabcontent">
+  <h2>Grade 6</h2>
+	
+<a href="https://docs.google.com/document/d/1z6i9TNY7j9s7yuXo5fdqK4szFHnkPnpy7n4dCy1OS8E/edit?usp=sharing" target="_blank">Grade 6 Semester Exam</a>
+</div> 
+
 
 	<script>
 		function openPage(pageName, elmnt, color) {
@@ -844,6 +839,7 @@ Grade 2,,Thida,,Andy,,Vathana
 
 			// Add the specific color to the button used to open the tab content
 			//elmnt.style.backgroundColor = color;
+			elmnt.style.backgroundColor = getComputedStyle(elmnt).getPropertyValue('--tab-bg')
 		}
 
 		// Get the element with id="defaultOpen" and click on it
