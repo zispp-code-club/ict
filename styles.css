@@ -1,15 +1,44 @@
-/* styles.css */
 
+/* styles.css */
 /* Set height of body and the document to 100% to enable "full page tabs" */
 html, body {
   margin: 0;
   padding: 0;
   width: 100%;
   height: 100%;
-	background-color: #333;
+	background-color: grey;
   font-family: Arial;
 }
 
+.header {
+	display: flex;
+	align-items: center;
+	//flex: 1 100%;
+  flex-wrap: wrap;
+	//flex-direction:row;
+	background-color: rgb(251,238,159);
+}
+
+.header h2 {
+	font-family: "Luminari";
+}
+
+.title {
+	//display: flex;
+	//align-items: center;
+  //flex-wrap: wrap;
+	//width: 100%;
+	//max-width: 1000px;
+	//min-height: 100px;
+	//margin: 0px;
+	//margin-left: 0.5em;
+	//padding: 0px;
+	background-color: rgb(251,238,159);
+	padding: 12px;
+}
+
+@media screen and (min-width:1000px) {
+}
 
 /* Style tab links */
 .tablink {
@@ -40,19 +69,18 @@ html, body {
   background-color: #333333;
   display: none;
   padding: 60px 20px;
-  //height: 100%;
-  //height: 1000%;
+  height: 100%;
+  height: 1000%;
 }
 
-.Main,#Main {background-color: #333; color: #fff}
-.G1,#G1 {--data-bg: #d4b2d8; background-color: #d4b2d8; color: #333}
-.G2,#G2 {background-color: #577590; color: #fff}
-.G3,#G3 {background-color: #f9844a; color: #fff}
-.G4,#G4 {background-color: #90be6d; color: #fff}
-.G5,#G5 {background-color: #f9c74f; color: #333}
-.G6,#G6 {background-color: #d4b2d8; color: #333}
-.Club,#Club {background-color: #559; color: #fff}
-
+.Main,#Main {background-color: #333;    color: #fff}
+.G1,#G1     {background-color: #d4b2d8; color: #333}
+.G2,#G2     {background-color: #577590; color: #fff}
+.G3,#G3     {background-color: #f9844a; color: #fff}
+.G4,#G4     {background-color: #90be6d; color: #fff}
+.G5,#G5     {background-color: #f9c74f; color: #333}
+.G6,#G6     {background-color: #d4b2d8; color: #333}
+.Club,#Club {background-color: #559;    color: #fff}
 
 .card-container {
   padding: 12px;
@@ -68,11 +96,8 @@ html, body {
   //border-radius: 0 0 10px 10px;
 	//background-color: #f0f0f0;
 	//background-color: white;
-
 	text-align: center;
 	display: grid;
-
-	//animate the hover
   //transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 	padding: 12px;
 	align-items: center;
@@ -81,7 +106,7 @@ html, body {
 	position: relative; // required for whole-card click, :before
 }
 
-// whole-card click
+/* Whole card click */
 .card a::before {
   content: "";
   position: absolute;
@@ -92,9 +117,7 @@ html, body {
 }
 
 .card:hover {
-  //box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
-	//filter: brightness(110%);
-	box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.1);
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
 }
 
