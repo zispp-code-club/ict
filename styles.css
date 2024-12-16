@@ -73,14 +73,15 @@ html, body {
   height: 1000%;
 }
 
-.Main,#Main {background-color: #333;    color: #fff}
-.G1,#G1     {background-color: #d4b2d8; color: #333}
-.G2,#G2     {background-color: #577590; color: #fff}
-.G3,#G3     {background-color: #f9844a; color: #fff}
-.G4,#G4     {background-color: #90be6d; color: #fff}
-.G5,#G5     {background-color: #f9c74f; color: #333}
-.G6,#G6     {background-color: #d4b2d8; color: #333}
-.Club,#Club {background-color: #559;    color: #fff}
+.Main,#Main {background-color: #333;    color: #fff;}
+//.G1,#G1     {background-color: #d4b2d8; color: #333; --tab-bg: red}
+.G1,#G1     {background-color: #d4b2d8; color: #333;}
+.G2,#G2     {background-color: #577590; color: #fff;}
+.G3,#G3     {background-color: #f9844a; color: #fff;}
+.G4,#G4     {background-color: #90be6d; color: #fff;}
+.G5,#G5     {background-color: #f9c74f; color: #333;}
+.G6,#G6     {background-color: #d4b2d8; color: #333;}
+.Club,#Club {background-color: #559;    color: #fff;}
 
 .card-container {
   padding: 12px;

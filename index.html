@@ -17,13 +17,13 @@
 
 <body>
 <button class="tablink Main" onclick="openPage('Main', this, '#333333')" id="defaultOpen">Main</button>
-<button class="tablink G1" onclick="openPage('G1', this, 'red')">G-1</button>
-<button class="tablink G2" onclick="openPage('G2', this, '#577590')">G-2</button>
-<button class="tablink G3" onclick="openPage('G3', this, '#f9844a')">G-3</button>
-<button class="tablink G4" onclick="openPage('G4', this, '#90be6d')">G-4</button>
-<button class="tablink G5" onclick="openPage('G5', this, '#f9c74f')">G-5</button>
-<button class="tablink G6" onclick="openPage('G6', this, '#d4b2d8')">G-6</button>
-<button class="tablink Club" onclick="openPage('Club', this, '#559')">Club</button>
+<button class="tablink G1" onclick="openPage('G1', this)">G-1</button>
+<button class="tablink G2" onclick="openPage('G2', this)">G-2</button>
+<button class="tablink G3" onclick="openPage('G3', this)">G-3</button>
+<button class="tablink G4" onclick="openPage('G4', this)">G-4</button>
+<button class="tablink G5" onclick="openPage('G5', this)">G-5</button>
+<button class="tablink G6" onclick="openPage('G6', this)">G-6</button>
+<button class="tablink Club" onclick="openPage('Club', this)">Club</button>
 
 
 <div id="Main" class="tabcontent">
@@ -812,7 +812,7 @@ Grade 2,,Thida,,Andy,,Vathana
 
 
 	<script>
-		function openPage(pageName, elmnt, color) {
+		function openPage(pageName, elmnt) {
 			// Hide all elements with class="tabcontent" by default */
 			var i, tabcontent, tablinks;
 			tabcontent = document.getElementsByClassName("tabcontent");
@@ -834,6 +834,7 @@ Grade 2,,Thida,,Andy,,Vathana
 			// Add the specific color to the button used to open the tab content
 			//elmnt.style.backgroundColor = color;
 			elmnt.style.backgroundColor = getComputedStyle(elmnt).getPropertyValue('--tab-bg')
+
 		}
 
 		// Get the element with id="defaultOpen" and click on it
