@@ -16,6 +16,7 @@ html, body {
 	//flex: 1 100%;
   flex-wrap: wrap;
 	//flex-direction:row;
+                
 	background-color: rgb(251,238,159);
 }
 
@@ -80,7 +81,7 @@ html, body {
 .G3,#G3     {background-color: #f9844a; color: #fff;}
 .G4,#G4     {background-color: #90be6d; color: #fff;}
 .G5,#G5     {background-color: #f9c74f; color: #333;}
-.G6,#G6     {background-color: #d4b2d8; color: #333;}
+.G6,#G6     {background-color: #66d9ff; color: #333;}
 .Club,#Club {background-color: #559;    color: #fff;}
 
 .card-container {
